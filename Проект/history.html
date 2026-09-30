@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>WGW Mobile — История расходов</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dash">
+
+    <!-- Сайдбар -->
+    <aside class="dash__sidebar">
+      <div class="dash__logo">
+        <img alt="WGW Logo" src="https://lh3.googleusercontent.com/aida/AEtjO1W7Q6zLugIMcN4Qz_1ttQ-oBWp3wbJjfPmGGebBQurIX0A4nEETjEDazNtyrJ6WUmVdD794Yet9AEcmJc8puraqPQi-GxKDe1QXnDMJ0H-uhaGezFdTplTusXvjM6yNKPiiIFs0mB8xF1VlQP25Y0z9JppN_PRtErMf_TYSNFllMVKhbwFpG05MOx_CLusadWsKFgVUuVglLn9Yfr_lWoyP0Lf-rE2woYyWWmXqDTPznZxYspO-ufkdHV4">
+        <div class="dash__logo-text">
+          <span class="dash__logo-title">WGW Mobile</span>
+          <span class="dash__logo-sub">Сеть 5G Active</span>
+        </div>
+      </div>
+
+      <nav class="dash__nav">
+        <a class="dash__nav-link" href="index.html">
+          <span class="material-symbols-outlined">home</span><span>Главная</span>
+        </a>
+        <a class="dash__nav-link" href="tariffs.html">
+          <span class="material-symbols-outlined">receipt_long</span><span>Тарифы</span>
+        </a>
+        <a class="dash__nav-link" href="#">
+          <span class="material-symbols-outlined">grid_view</span><span>Услуги</span>
+        </a>
+        <a class="dash__nav-link dash__nav-link--active" href="history.html">
+          <span class="material-symbols-outlined">history</span><span>История</span>
+        </a>
+        <a class="dash__nav-link" href="#">
+          <span class="material-symbols-outlined">person</span><span>Профиль</span>
+        </a>
+      </nav>
+
+      <div class="dash__user">
+        <div class="dash__user-info">
+          <img class="dash__user-avatar" alt="Profile" src="https://lh3.googleusercontent.com/aida/AEtjO1V5GVqwRCZNlFrx-3J2qa9pRXviAusggnRKuVcYTR_kE4ZB_cqdpWszD7_LrRImxS3LTuv6Q3MnTXuvpd4nWjMf4C7eKrqiemx7fojyk5zTBpmUVlZWEmYj3LYhc9hwt0WLW4Jd37GzbVWIQJG6zw-TH4VJTcGpmI-xp0YLNJTiPtgh_bsBZybhhPW-Eo0r2vhP692XqoGUneuV6vXQ7SSXdOVHvljwqeGIHiSp8Xp168Z-sCsL7ucc2_o">
+          <div class="dash__user-text">
+            <span class="dash__user-name">Елена Ковалева</span>
+            <span class="dash__user-phone">+375 (29) 555-01-99</span>
+          </div>
+        </div>
+        <a class="dash__logout" href="login.html" aria-label="Выйти">
+          <span class="material-symbols-outlined">logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Основная часть -->
+    <div class="dash__wrapper">
+
+      <header class="dash__header">
+        <div class="dash__search">
+          <span class="material-symbols-outlined dash__search-icon">search</span>
+          <input type="text" placeholder="Поиск по тарифам, услугам или чекам...">
+        </div>
+
+        <div class="dash__balance">
+          <span class="dash__balance-label">Баланс:</span>
+          <span class="dash__balance-value">150,00 BYN</span>
+          <button class="dash__balance-btn" type="button">Пополнить</button>
+        </div>
+
+        <button class="dash__notify" type="button" aria-label="Уведомления">
+          <span class="material-symbols-outlined">notifications</span>
+        </button>
+      </header>
+
+      <main class="history__main">
+
+        <!-- Заголовок и действия -->
+        <section class="history__head">
+          <div>
+            <span class="history__eyebrow">Учётные данные</span>
+            <h1 class="history__title">История расходов и детализация</h1>
+            <div class="history__meta-line">
+              <span>eSIM</span>
+              <span>•</span>
+              <span>Тариф 5G Ультра</span>
+            </div>
+            <p class="history__lead">
+              Контролируйте списания, пополнения и остатки пакетов по номеру
+              <b>+375 (29) 555-01-99</b>
+            </p>
+          </div>
+
+          <div class="history__actions">
+            <div class="history__date">
+              <span class="material-symbols-outlined">calendar_month</span>
+              <span>1 октября 2024 — 31 октября 2024</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <button class="history__btn history__btn--solid" type="button">
+              <span class="material-symbols-outlined">download</span>
+              <span>Экспорт</span>
+            </button>
+            <button class="history__btn history__btn--ghost" type="button" onclick="window.print()">
+              <span class="material-symbols-outlined">print</span>
+              <span>Печать</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- KPI -->
+        <section class="history__kpi">
+
+          <!-- Израсходовано -->
+          <article class="kpi-card">
+            <div>
+              <div class="kpi-card__head">
+                <span class="kpi-card__label">Всего израсходовано</span>
+                <span class="kpi-card__icon kpi-card__icon--down material-symbols-outlined">trending_down</span>
+              </div>
+              <div class="kpi-card__value">
+                <strong>42,85</strong><span>BYN</span>
+              </div>
+              <div class="kpi-limit">
+                <span>Установленный лимит</span>
+                <b>60,00 BYN</b>
+              </div>
+              <div class="kpi-progress">
+                <div style="width: 71.4%;"></div>
+              </div>
+            </div>
+            <div class="kpi-card__hint">
+              <span>Остаток лимита: <b>17,15 BYN</b></span>
+              <a href="#">71% исчерпано</a>
+            </div>
+          </article>
+
+          <!-- Пополнено -->
+          <article class="kpi-card">
+            <div>
+              <div class="kpi-card__head">
+                <span class="kpi-card__label">Всего пополнено</span>
+                <span class="kpi-card__icon kpi-card__icon--wallet material-symbols-outlined">account_balance_wallet</span>
+              </div>
+              <div class="kpi-card__value kpi-card__value--primary">
+                <strong>150,00</strong><span>BYN</span>
+              </div>
+              <div class="kpi-card__hint" style="margin-top: var(--space-sm);">
+                <span>2 операции через ЕРИП</span>
+              </div>
+            </div>
+            <div class="kpi-card__hint">
+              <span>Посл. транзакция: 24.10.2024</span>
+              <a href="#">+100,00 BYN</a>
+            </div>
+          </article>
+
+          <!-- Структура расходов -->
+          <article class="kpi-card">
+            <div>
+              <div class="kpi-card__head">
+                <span class="kpi-card__label">Структура расходов</span>
+                <span class="kpi-card__icon kpi-card__icon--chart material-symbols-outlined">pie_chart</span>
+              </div>
+
+              <div class="kpi-bar">
+                <div class="seg-traffic" style="width: 68%;"></div>
+                <div class="seg-calls"   style="width: 24%;"></div>
+                <div class="seg-other"   style="width: 8%;"></div>
+              </div>
+
+              <div class="kpi-legend">
+                <div>
+                  <span class="dot-row"><i class="dot-traffic"></i> Трафик (68%)</span>
+                  <b>29,14 BYN</b>
+                </div>
+                <div>
+                  <span class="dot-row"><i class="dot-calls"></i> Звонки (24%)</span>
+                  <b>10,28 BYN</b>
+                </div>
+                <div>
+                  <span class="dot-row"><i class="dot-other"></i> SMS / Др. (8%)</span>
+                  <b>3,43 BYN</b>
+                </div>
+              </div>
+            </div>
+            <div class="kpi-card__hint">
+              <span>Период: Октябрь 2024</span>
+              <a href="#">Аналитика пакета</a>
+            </div>
+          </article>
+
+        </section>
+
+        <!-- Фильтры -->
+        <section class="history__filters">
+          <div class="history__filter">
+            <label for="op-type">Тип операции</label>
+            <select id="op-type">
+              <option>Все операции</option>
+              <option>Звонки</option>
+              <option>Интернет-трафик</option>
+              <option>SMS сообщения</option>
+              <option>Абонплата</option>
+              <option>Пополнения</option>
+            </select>
+          </div>
+
+          <div class="history__filter">
+            <label for="op-period">Период</label>
+            <select id="op-period">
+              <option selected>Октябрь 2024</option>
+              <option>Сентябрь 2024</option>
+              <option>Август 2024</option>
+              <option>Выбрать даты...</option>
+            </select>
+          </div>
+
+          <div class="history__filter">
+            <label for="op-sort">Сортировка</label>
+            <select id="op-sort">
+              <option>Сначала новые</option>
+              <option>Сначала старые</option>
+              <option>По сумме (убыв.)</option>
+              <option>По сумме (возр.)</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Список операций -->
+        <section class="history__list">
+          <div class="history__list-head">
+            <h2 class="history__list-title">Операции за период</h2>
+            <span class="history__list-count">Показано 6 из 42</span>
+          </div>
+
+          <!-- 1. Пополнение -->
+          <div class="op-row">
+            <div class="op-row__left">
+              <div class="op-row__icon">
+                <span class="material-symbols-outlined">arrow_downward</span>
+              </div>
+              <div class="op-row__text">
+                <span class="op-row__title">Пополнение через ЕРИП</span>
+                <span class="op-row__sub">24.10.2024 • 14:30 • Чек #89124</span>
+              </div>
+            </div>
+            <div class="op-row__right">
+              <span class="op-row__amount">+100,00 BYN</span>
+              <span class="op-status op-status--ok">Зачислено</span>
+            </div>
+          </div>
+
+          <!-- 2. Списание абонплаты -->
+          <div class="op-row">
+            <div class="op-row__left">
+              <div class="op-row__icon op-row__icon--out">
+                <span class="material-symbols-outlined">receipt_long</span>
+              </div>
+              <div class="op-row__text">
+                <span class="op-row__title">Абонентская плата</span>
+                <span class="op-row__sub">01.10.2024 • 00:01 • Тариф 5G Ультра</span>
+              </div>
+            </div>
+            <div class="op-row__right">
+              <span class="op-row__amount op-row__amount--out">−19,90 BYN</span>
+              <span class="op-status op-status--done">Списано</span>
+            </div>
+          </div>
+
+          <!-- 3. Звонок -->
+          <div class="op-row">
+            <div class="op-row__left">
+              <div class="op-row__icon op-row__icon--out">
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <div class="op-row__text">
+                <span class="op-row__title">Звонок на +375 29 123-45-67</span>
+                <span class="op-row__sub">17.10.2024 • 14:30 • Длительность 3 мин 12 сек</span>
+              </div>
+            </div>
+            <div class="op-row__right">
+              <span class="op-row__amount op-row__amount--out">−2,50 BYN</span>
+              <span class="op-status op-status--done">Списано</span>
+            </div>
+          </div>
+
+          <!-- 4. Интернет сверх тарифа -->
+          <div class="op-row">
+            <div class="op-row__left">
+              <div class="op-row__icon op-row__icon--out">
+                <span class="material-symbols-outlined">bolt</span>
+              </div>
+              <div class="op-row__text">
+                <span class="op-row__title">5G Ultra Трафик</span>
+                <span class="op-row__sub">17.10.2024 • 12:15 • 1,2 ГБ сверх тарифа</span>
+              </div>
+            </div>
+            <div class="op-row__right">
+              <span class="op-row__amount op-row__amount--out">−1,80 BYN</span>
+              <span class="op-status op-status--done">Списано</span>
+            </div>
+          </div>
+
+          <!-- 5. SMS -->
+          <div class="op-row">
+            <div class="op-row__left">
+              <div class="op-row__icon op-row__icon--out">
+                <span class="material-symbols-outlined">sms</span>
+              </div>
+              <div class="op-row__text">
+                <span class="op-row__title">SMS на номер +375 44 987-65-43</span>
+                <span class="op-row__sub">15.10.2024 • 09:42 • Разовая отправка</span>
+              </div>
+            </div>
+            <div class="op-row__right">
+              <span class="op-row__amount op-row__amount--out">−0,15 BYN</span>
+              <span class="op-status op-status--done">Списано</span>
+            </div>
+          </div>
+
+          <!-- 6. Ожидающая операция -->
+          <div class="op-row">
+            <div class="op-row__left">
+              <div class="op-row__icon">
+                <span class="material-symbols-outlined">sync</span>
+              </div>
+              <div class="op-row__text">
+                <span class="op-row__title">Пополнение картой</span>
+                <span class="op-row__sub">14.10.2024 • 18:20 • Обработка платежа</span>
+              </div>
+            </div>
+            <div class="op-row__right">
+              <span class="op-row__amount">+50,00 BYN</span>
+              <span class="op-status op-status--pending">В обработке</span>
+            </div>
+          </div>
+
+          <div class="history__more">
+            <button type="button">Показать ещё</button>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Нижняя панель -->
+      <nav class="dash__bottom">
+        <a href="index.html">
+          <span class="material-symbols-outlined">home</span>
+          <span>Главная</span>
+        </a>
+        <a href="tariffs.html">
+          <span class="material-symbols-outlined">receipt_long</span>
+          <span>Тарифы</span>
+        </a>
+        <a href="#">
+          <span class="material-symbols-outlined">grid_view</span>
+          <span>Услуги</span>
+        </a>
+        <a href="history.html" class="active">
+          <span class="material-symbols-outlined">history</span>
+          <span>История</span>
+        </a>
+      </nav>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

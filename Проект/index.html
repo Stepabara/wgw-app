@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>WGW Mobile — Главная</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dash">
+
+    <!-- ========== САЙДБАР (десктоп) ========== -->
+    <aside class="dash__sidebar">
+      <div class="dash__logo">
+        <img alt="WGW Logo" src="https://lh3.googleusercontent.com/aida/AEtjO1W7Q6zLugIMcN4Qz_1ttQ-oBWp3wbJjfPmGGebBQurIX0A4nEETjEDazNtyrJ6WUmVdD794Yet9AEcmJc8puraqPQi-GxKDe1QXnDMJ0H-uhaGezFdTplTusXvjM6yNKPiiIFs0mB8xF1VlQP25Y0z9JppN_PRtErMf_TYSNFllMVKhbwFpG05MOx_CLusadWsKFgVUuVglLn9Yfr_lWoyP0Lf-rE2woYyWWmXqDTPznZxYspO-ufkdHV4">
+        <div class="dash__logo-text">
+          <span class="dash__logo-title">WGW Mobile</span>
+          <span class="dash__logo-sub">Сеть 5G Active</span>
+        </div>
+      </div>
+
+      <nav class="dash__nav">
+        <a class="dash__nav-link dash__nav-link--active" href="index.html">
+          <span class="material-symbols-outlined">home</span>
+          <span>Главная</span>
+        </a>
+        <a class="dash__nav-link" href="tariffs.html">
+          <span class="material-symbols-outlined">receipt_long</span>
+          <span>Тарифы</span>
+        </a>
+        <a class="dash__nav-link" href="#">
+          <span class="material-symbols-outlined">grid_view</span>
+          <span>Услуги</span>
+        </a>
+        <a class="dash__nav-link" href="history.html">
+          <span class="material-symbols-outlined">history</span>
+          <span>История</span>
+        </a>
+        <a class="dash__nav-link" href="#">
+          <span class="material-symbols-outlined">person</span>
+          <span>Профиль</span>
+        </a>
+      </nav>
+
+      <div class="dash__user">
+        <div class="dash__user-info">
+          <img class="dash__user-avatar" alt="Profile" src="https://lh3.googleusercontent.com/aida/AEtjO1V5GVqwRCZNlFrx-3J2qa9pRXviAusggnRKuVcYTR_kE4ZB_cqdpWszD7_LrRImxS3LTuv6Q3MnTXuvpd4nWjMf4C7eKrqiemx7fojyk5zTBpmUVlZWEmYj3LYhc9hwt0WLW4Jd37GzbVWIQJG6zw-TH4VJTcGpmI-xp0YLNJTiPtgh_bsBZybhhPW-Eo0r2vhP692XqoGUneuV6vXQ7SSXdOVHvljwqeGIHiSp8Xp168Z-sCsL7ucc2_o">
+          <div class="dash__user-text">
+            <span class="dash__user-name">Елена Ковалева</span>
+            <span class="dash__user-phone">+375 (29) 555-01-99</span>
+          </div>
+        </div>
+        <a class="dash__logout" href="login.html" aria-label="Выйти">
+          <span class="material-symbols-outlined">logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ========== ОСНОВНАЯ ЧАСТЬ ========== -->
+    <div class="dash__wrapper">
+
+      <!-- Верхняя панель -->
+      <header class="dash__header">
+        <div class="dash__search">
+          <span class="material-symbols-outlined dash__search-icon">search</span>
+          <input type="text" placeholder="Поиск по тарифам, услугам или чекам...">
+        </div>
+
+        <div class="dash__balance">
+          <span class="dash__balance-label">Баланс:</span>
+          <span class="dash__balance-value">150,00 BYN</span>
+          <button class="dash__balance-btn" type="button">Пополнить</button>
+        </div>
+
+        <button class="dash__notify" type="button" aria-label="Уведомления">
+          <span class="material-symbols-outlined">notifications</span>
+        </button>
+      </header>
+
+      <!-- Основной контент -->
+      <main class="dash__main">
+
+        <!-- Карточки-сводки -->
+        <section class="dash__summary">
+
+          <!-- Баланс -->
+          <article class="dash-card">
+            <div class="dash-card__head">
+              <div class="dash-card__title">
+                <span class="dash-card__icon material-symbols-outlined">account_balance_wallet</span>
+                <span>Баланс лицевого счета</span>
+              </div>
+              <span class="dash-card__badge">
+                <span class="dash-card__badge-dot"></span>
+                Активен до 15 ноября
+              </span>
+            </div>
+
+            <div class="dash-card__value">
+              <strong>150,00</strong><span>BYN</span>
+            </div>
+            <p class="dash-card__sub">Лицевой счет: <b>#4491-0982-12</b></p>
+
+            <button class="dash-card__btn" type="button">
+              <span class="material-symbols-outlined">add_circle</span>
+              Пополнить счет
+            </button>
+            <div class="dash-card__hint">
+              <span>Доступно без комиссии</span>
+              <b>ЕРИП • Карты РБ • Белкарт</b>
+            </div>
+          </article>
+
+          <!-- Минуты -->
+          <article class="dash-card">
+            <div class="dash-card__head">
+              <div class="dash-card__title">
+                <span class="dash-card__icon material-symbols-outlined">call</span>
+                <span>Минуты по РБ</span>
+              </div>
+              <span class="dash-card__badge">Лимит 500 мин</span>
+            </div>
+
+            <div class="dash-card__value">
+              <strong>250</strong><span>/ 500 мин</span>
+            </div>
+            <p class="dash-card__sub">Осталось 250 мин до конца месяца</p>
+
+            <div class="dash-bar">
+              <div class="dash-bar__fill" style="width: 50%;"></div>
+            </div>
+            <div class="dash-bar__meta">
+              <span>Использовано: 50%</span>
+              <b>Обновление 01.11</b>
+            </div>
+          </article>
+
+          <!-- Трафик -->
+          <article class="dash-card">
+            <div class="dash-card__head">
+              <div class="dash-card__title">
+                <span class="dash-card__icon material-symbols-outlined">bolt</span>
+                <span>Интернет-трафик</span>
+              </div>
+              <span class="dash-card__badge">
+                <span class="material-symbols-outlined" style="font-size: 0.8125rem;">speed</span>
+                5G ULTRA
+              </span>
+            </div>
+
+            <div class="dash-card__value">
+              <strong>15</strong><span>/ 30 ГБ</span>
+            </div>
+            <p class="dash-card__sub">Безлимит на соцсети, мессенджеры и стриминг</p>
+
+            <div class="dash-bar">
+              <div class="dash-bar__fill" style="width: 50%;"></div>
+            </div>
+            <div class="dash-bar__meta">
+              <span>Остаток: 15,0 ГБ</span>
+              <b>Турбо-кнопка</b>
+            </div>
+          </article>
+
+        </section>
+
+        <!-- Средний блок: тариф + правая колонка -->
+        <section class="dash__middle">
+
+          <!-- Левая колонка -->
+          <div class="dash__col">
+
+            <!-- Текущий тариф -->
+            <article class="dash-plan">
+              <div class="dash-plan__head">
+                <div class="dash-plan__icon">
+                  <span class="material-symbols-outlined" style="font-size: 1.875rem;">sim_card</span>
+                </div>
+                <div>
+                  <div class="dash-plan__title-row">
+                    <span class="dash-plan__title">Ваш тариф: WGW Максимум</span>
+                    <span class="dash-plan__tag">eSIM</span>
+                  </div>
+                  <p class="dash-plan__desc">
+                    Включено: 30 ГБ 5G, 500 минут во все сети РБ, 100 SMS,
+                    безлимитный трафик на YouTube и Telegram
+                  </p>
+                </div>
+              </div>
+
+              <div class="dash-plan__price">
+                <strong>65,00</strong><span>BYN/мес</span>
+              </div>
+
+              <div class="dash-plan__actions">
+                <button class="btn btn--ghost" type="button">Детализация пакета</button>
+                <button class="btn btn--solid" type="button">Сменить тариф</button>
+              </div>
+            </article>
+
+            <!-- График -->
+            <article class="dash-chart">
+              <div class="dash-chart__head">
+                <div>
+                  <h3 class="dash-chart__title">Статистика потребления услуг</h3>
+                  <p class="dash-chart__sub">Ежедневный расход интернет-трафика (ГБ) и голосовых минут (мин)</p>
+                </div>
+                <div class="dash-chart__tabs">
+                  <button class="chart-tab" type="button">Неделя</button>
+                  <button class="chart-tab active" type="button">Месяц (14 дн.)</button>
+                  <button class="chart-tab" type="button">3 месяца</button>
+                </div>
+              </div>
+
+              <div class="dash-chart__legend">
+                <span><i class="dot-traffic"></i> Интернет-трафик (ГБ)</span>
+                <span><i class="dot-minutes"></i> Голосовые минуты (мин)</span>
+              </div>
+
+              <div class="dash-chart__canvas">
+                <svg viewBox="0 0 800 280" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="gradTraffic" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#2dbcfe" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#2dbcfe" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="gradMinutes" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#0a3d91" stop-opacity="0.25"/>
+                      <stop offset="100%" stop-color="#0a3d91" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <g stroke="#d3e4fe" stroke-width="1">
+                    <line x1="0" y1="40"  x2="800" y2="40"/>
+                    <line x1="0" y1="90"  x2="800" y2="90"/>
+                    <line x1="0" y1="140" x2="800" y2="140"/>
+                    <line x1="0" y1="190" x2="800" y2="190"/>
+                    <line x1="0" y1="240" x2="800" y2="240"/>
+                  </g>
+
+                  <path d="M0,180 L60,160 L120,140 L180,170 L240,120 L300,100 L360,130 L420,90 L480,110 L540,80 L600,95 L660,70 L720,85 L800,60 L800,260 L0,260 Z" fill="url(#gradTraffic)"/>
+                  <polyline fill="none" stroke="#2dbcfe" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+                            points="0,180 60,160 120,140 180,170 240,120 300,100 360,130 420,90 480,110 540,80 600,95 660,70 720,85 800,60"/>
+
+                  <path d="M0,210 L60,195 L120,180 L180,190 L240,165 L300,155 L360,170 L420,145 L480,160 L540,135 L600,150 L660,125 L720,140 L800,115 L800,260 L0,260 Z" fill="url(#gradMinutes)"/>
+                  <polyline fill="none" stroke="#0a3d91" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+                            points="0,210 60,195 120,180 180,190 240,165 300,155 360,170 420,145 480,160 540,135 600,150 660,125 720,140 800,115"/>
+
+                  <g fill="#ffffff" stroke="#2dbcfe" stroke-width="2">
+                    <circle cx="60"  cy="160" r="4"/>
+                    <circle cx="240" cy="120" r="4"/>
+                    <circle cx="420" cy="90"  r="4"/>
+                    <circle cx="600" cy="95"  r="4"/>
+                    <circle cx="800" cy="60"  r="4"/>
+                  </g>
+                </svg>
+
+                <div class="dash-chart__tip">
+                  <span>28.10</span>
+                  <b>2,4 ГБ</b>
+                  <span>32 мин</span>
+                </div>
+              </div>
+
+              <div class="dash-chart__labels">
+                <span>01.10</span>
+                <span>07.10</span>
+                <span>14.10</span>
+                <span>21.10</span>
+                <span>28.10</span>
+              </div>
+
+              <div class="dash-chart__footer">
+                <div>
+                  <span>Всего за период</span>
+                  <b>15,0 ГБ трафика</b>
+                </div>
+                <div>
+                  <span>Голос</span>
+                  <b>250 мин</b>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Правая колонка -->
+          <div class="dash__col">
+
+            <!-- Быстрые действия -->
+            <section class="dash-quick">
+              <h3 class="dash-quick__title">Быстрые действия</h3>
+              <div class="dash-quick__grid">
+                <button class="dash-quick__btn" type="button">
+                  <span class="material-symbols-outlined">swap_horiz</span>
+                  <span>Сменить тариф</span>
+                </button>
+                <button class="dash-quick__btn" type="button">
+                  <span class="material-symbols-outlined">add_card</span>
+                  <span>Пополнить</span>
+                </button>
+                <button class="dash-quick__btn" type="button">
+                  <span class="material-symbols-outlined">sim_card</span>
+                  <span>eSIM</span>
+                </button>
+                <button class="dash-quick__btn" type="button">
+                  <span class="material-symbols-outlined">support_agent</span>
+                  <span>Поддержка</span>
+                </button>
+              </div>
+            </section>
+
+            <!-- Промо -->
+            <section class="dash-promo">
+              <span class="dash-promo__tag">
+                <span class="material-symbols-outlined" style="font-size: 0.8125rem;">local_fire_department</span>
+                Акция
+              </span>
+              <h4 class="dash-promo__title">+10 ГБ в подарок</h4>
+              <p class="dash-promo__text">
+                Активируйте автоплатёж до 30 ноября и получите дополнительно 10 ГБ на 3 месяца
+              </p>
+              <button class="dash-promo__btn" type="button">Подключить</button>
+            </section>
+
+            <!-- Подключённые услуги -->
+            <section class="dash-list">
+              <div class="dash-list__head">
+                <h3 class="dash-list__title">Подключённые услуги</h3>
+                <a class="dash-list__link" href="#">Все</a>
+              </div>
+
+              <div class="dash-service">
+                <div class="dash-service__info">
+                  <div class="dash-service__icon">
+                    <span class="material-symbols-outlined">music_note</span>
+                  </div>
+                  <div class="dash-service__text">
+                    <span class="dash-service__name">Музыка WGW</span>
+                    <span class="dash-service__price">5,00 BYN / мес</span>
+                  </div>
+                </div>
+                <label class="dash-switch">
+                  <input type="checkbox" checked>
+                  <span class="dash-switch__track"><span class="dash-switch__thumb"></span></span>
+                </label>
+              </div>
+
+              <div class="dash-service">
+                <div class="dash-service__info">
+                  <div class="dash-service__icon">
+                    <span class="material-symbols-outlined">shield</span>
+                  </div>
+                  <div class="dash-service__text">
+                    <span class="dash-service__name">Антиспам</span>
+                    <span class="dash-service__price">Бесплатно</span>
+                  </div>
+                </div>
+                <label class="dash-switch">
+                  <input type="checkbox" checked>
+                  <span class="dash-switch__track"><span class="dash-switch__thumb"></span></span>
+                </label>
+              </div>
+
+              <div class="dash-service">
+                <div class="dash-service__info">
+                  <div class="dash-service__icon">
+                    <span class="material-symbols-outlined">cloud</span>
+                  </div>
+                  <div class="dash-service__text">
+                    <span class="dash-service__name">Облако 100 ГБ</span>
+                    <span class="dash-service__price">3,50 BYN / мес</span>
+                  </div>
+                </div>
+                <label class="dash-switch">
+                  <input type="checkbox">
+                  <span class="dash-switch__track"><span class="dash-switch__thumb"></span></span>
+                </label>
+              </div>
+            </section>
+
+            <!-- Последние платежи -->
+            <section class="dash-list">
+              <div class="dash-list__head">
+                <h3 class="dash-list__title">Последние платежи</h3>
+                <a class="dash-list__link" href="history.html">История</a>
+              </div>
+
+              <div class="dash-pay">
+                <div class="dash-pay__info">
+                  <div class="dash-pay__icon">
+                    <span class="material-symbols-outlined">arrow_downward</span>
+                  </div>
+                  <div class="dash-pay__text">
+                    <span class="dash-pay__title">Пополнение</span>
+                    <span class="dash-pay__date">ЕРИП • 15.10.2025</span>
+                  </div>
+                </div>
+                <span class="dash-pay__amount">+50,00 BYN</span>
+              </div>
+
+              <div class="dash-pay">
+                <div class="dash-pay__info">
+                  <div class="dash-pay__icon">
+                    <span class="material-symbols-outlined">arrow_downward</span>
+                  </div>
+                  <div class="dash-pay__text">
+                    <span class="dash-pay__title">Пополнение</span>
+                    <span class="dash-pay__date">Карта • 01.10.2025</span>
+                  </div>
+                </div>
+                <span class="dash-pay__amount">+65,00 BYN</span>
+              </div>
+
+              <div class="dash-pay">
+                <div class="dash-pay__info">
+                  <div class="dash-pay__icon dash-pay__icon--out">
+                    <span class="material-symbols-outlined">arrow_upward</span>
+                  </div>
+                  <div class="dash-pay__text">
+                    <span class="dash-pay__title">Списание за тариф</span>
+                    <span class="dash-pay__date">01.10.2025</span>
+                  </div>
+                </div>
+                <span class="dash-pay__amount dash-pay__amount--out">−65,00 BYN</span>
+              </div>
+            </section>
+
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Нижняя панель (мобильный) -->
+      <nav class="dash__bottom">
+        <a href="index.html" class="active">
+          <span class="material-symbols-outlined">home</span>
+          <span>Главная</span>
+        </a>
+        <a href="#">
+          <span class="material-symbols-outlined">receipt_long</span>
+          <span>Тарифы</span>
+        </a>
+        <a href="#">
+          <span class="material-symbols-outlined">grid_view</span>
+          <span>Услуги</span>
+        </a>
+        <a href="history.html">
+          <span class="material-symbols-outlined">history</span>
+          <span>История</span>
+        </a>
+      </nav>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
